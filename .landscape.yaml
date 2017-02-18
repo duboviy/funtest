@@ -1,0 +1,13 @@
+autodetect: yes
+
+pylint:
+  disable:
+    # W0612: Unused variable %r
+    - W0612
+    # W0613: Unused argument %r
+    - W0613
+
+pyflakes:
+  disable:
+    # F401: unused import
+    - F401
