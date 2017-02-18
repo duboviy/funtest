@@ -24,8 +24,6 @@ It provides a core of commonly used functionalities for testing command line app
 
 ## Basic usage examples
 
-You can use profile decorator to wrap your code:
-
 ```python
 import os
 import sys
@@ -50,6 +48,8 @@ assert ftr.get_cwd() == new_folder1
 output = ftr.run('ipconfig')
 assert 'DNS Suffix' in output
 ```
+
+You can easily use this wrapper to build your test scenarios within some python testing framework (e.g. pytest, nose, unittest or any other) or even python BDD framework (e.g. behave, lettuce, freshen or any other).
 
 ## License
 
